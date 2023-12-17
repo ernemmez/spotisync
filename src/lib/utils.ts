@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import clsx, { ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 

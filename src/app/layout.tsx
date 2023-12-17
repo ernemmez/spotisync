@@ -2,13 +2,10 @@ import { Metadata } from 'next';
 import * as React from 'react';
 
 import '@/styles/globals.css';
-// !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
 
 import { siteConfig } from '@/constant/config';
 
-// !STARTERCONF Change these default meta
-// !STARTERCONF Look at @/constant/config to change them
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -17,8 +14,6 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   robots: { index: true, follow: true },
-  // !STARTERCONF this is the default favicon, you can generate your own from https://realfavicongenerator.net/
-  // ! copy to /favicon folder
   icons: {
     icon: '/favicon/favicon.ico',
     shortcut: '/favicon/favicon-16x16.png',
@@ -34,19 +29,44 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: siteConfig.title,
-    description: siteConfig.description,
-    images: [`${siteConfig.url}/images/og.jpg`],
-    // creator: '@th_clarence',
-  },
-  // authors: [
-  //   {
-  //     name: 'Theodorus Clarence',
-  //     url: 'https://theodorusclarence.com',
-  //   },
-  // ],
+  authors: [
+    {
+      name: 'Eren Emmez',
+      url: 'https://www.linkedin.com/in/erenemmez/',
+    },
+  ],
+  keywords: [
+    'Spotify otomatik çalma listesi',
+    'Music sharing',
+    'Beğenilen Şarkılar paylaşımı',
+    'Public playlist',
+    'Spotify araçları',
+    'Automatic playlist creator',
+    'Spotisync hizmeti',
+    'Liked Songs sharing',
+    'Müzik paylaşma servisi',
+    'Spotify hesap entegrasyonu',
+    'Automatic sharing tool',
+    'Beğenilen şarkıları paylaş',
+    'Spotisync auto playlist',
+    'Liked Songs automatic sharing',
+    'Spotify kullanıcı araçları',
+    'Spotify auto playlist',
+    'Music sharing',
+    'Liked Songs sharing',
+    'Public playlist',
+    'Spotify tools',
+    'Automatic playlist creator',
+    'Spotisync service',
+    'Liked Songs sharing',
+    'Music sharing service',
+    'Spotify account integration',
+    'Automatic sharing tool',
+    'Share Liked Songs',
+    'Spotisync auto playlist',
+    'Liked Songs automatic sharing',
+    'Spotify user tools',
+  ],
 };
 
 export default function RootLayout({
@@ -56,7 +76,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body className='bg-dark'>{children}</body>
     </html>
   );
 }

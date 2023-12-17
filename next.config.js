@@ -3,6 +3,18 @@ const nextConfig = {
   eslint: {
     dirs: ['src'],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'source.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'https://i.scdn.co/',
+      },
+    ],
+  },
 
   reactStrictMode: true,
   swcMinify: true,
