@@ -31,6 +31,7 @@ export async function POST(req: NextRequest) {
   // example track item: spotify:track:<track_id>
   // @ts-ignore
   const tracksToAdd = await savedTracks.map(
+    // @ts-ignore
     ({ track }) => `spotify:track:${track.id}`
   );
 
